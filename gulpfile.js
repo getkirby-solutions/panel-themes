@@ -7,10 +7,13 @@ var rename       = require('gulp-rename');
 var pkgJson      = require('./package.json');
 
 gulp.task('styles', function() {
-  return gulp.src('src/less/bundle.less')
+  return gulp.src('src/less/*.less')
     .pipe(less({plugins:[autoprefix]}))
     .pipe(minifyCSS())
-    .pipe(rename('azure.min.css'))
+    .pipe(rename({
+      suffix: '.min',
+      extname: '.css'
+    }))
     .pipe(gulp.dest('dist/'));
 });
 

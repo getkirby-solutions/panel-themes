@@ -1,52 +1,3 @@
-@use-demo:            false;
-@use-navbar-icons:    true;
-@navbar-menu-width:   4.5em;
-
-@brand-primary:      #16a085; //#00a993; //
-@brand-secondary:    #303540;
-@brand-emphasis:     #0275d8;
-@brand-highlight:    #f2f3f5;
-@text-muted:         #8492aa;
-
-// colors
-@orange: #d17165;
-@green:  #8dae28;
-@blue:   @brand-emphasis;
-@sky:    #0072C6; // darker then @brand-emphasis
-
-// asbestos
-@asbestos-navbar-bg:  #334045;
-@asbestos-body-bg:    #f2f2f0;
-@asbestos-menu-bg:    @asbestos-navbar-bg;
-@asbestos-emphasis:   @orange;
-// ocean
-@ocean-navbar-bg:     #34363d;
-@ocean-body-bg:       @brand-highlight;
-@ocean-menu-bg:       @brand-secondary;
-@ocean-emphasis:      @blue;
-// sky
-@sky-navbar-bg:       @sky;
-@sky-body-bg:         @brand-highlight;
-@sky-menu-bg:         @brand-secondary;
-@sky-emphasis:        @blue;
-
-// -----------------------
-// set theme
-// -----------------------
-@theme-navbar-bg:          @ocean-navbar-bg;
-@theme-menu-bg:            @ocean-menu-bg;
-@theme-body-bg:            @ocean-body-bg;
-@theme-emphasis:           @ocean-emphasis;
-@theme-progress-bar-bg:    @ocean-emphasis;
-
-/* inherit from theme */
-@search-bg:           darken(desaturate(@theme-navbar-bg, 2%), 2%);
-@theme-border-color:  darken(@theme-body-bg, 10%);
-@btn-bg:              @theme-menu-bg;
-// sidebar
-@sidebar-bg:          #fff;
-@sidebar-color:       #000;
-
 // body bg
 .app,
 .grey {
@@ -157,18 +108,18 @@ body.rtl .nav-icon-left {
 
 // buttons
 .btn.btn-rounded {
-  border-color: @btn-bg;
+  border-color: @theme-btn-bg;
   &:hover,
   &:active,
   &:focus {
-    background-color: @btn-bg;
+    background-color: @theme-btn-bg;
   }
 }
 .autocomplete button {
-  background-color: @btn-bg;
+  background-color: @theme-btn-bg;
 }
 .autocomplete:after {
-  border-bottom-color: @btn-bg;
+  border-bottom-color: @theme-btn-bg;
 }
 .autocomplete button strong {
   color: @theme-emphasis;
@@ -176,7 +127,7 @@ body.rtl .nav-icon-left {
 
 // tags
 .tag {
-  background-color: @btn-bg;
+  background-color: @theme-btn-bg;
 }
 .tag .tag-label:focus,
 .tag-is-focused .tag-label {
@@ -290,13 +241,13 @@ body.ltr .topbar .breadcrumb {
 // navbar search box
 .search-input {
   color: #fff;
-  background-color: @search-bg;
+  background-color: @theme-search-bg;
 }
 .search:after {
-  border-bottom-color: @search-bg;
+  border-bottom-color: @theme-search-bg;
 }
 .search-results {
-  background-color: @search-bg;
+  background-color: @theme-search-bg;
 }
 // search results link
 .search-section li.active a,
@@ -518,11 +469,11 @@ body.ltr .topbar .breadcrumb {
   }
   // inline HTML
   .cm-tag {
-    color: @text-muted;
+    color: @theme-text-muted;
   }
   .cm-attribute,
   .cm-string {
-    color: @text-muted;
+    color: @theme-text-muted;
   }
 }
 
