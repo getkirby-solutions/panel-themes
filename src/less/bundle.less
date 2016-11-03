@@ -2,12 +2,16 @@
 @use-navbar-icons:    true;
 @navbar-menu-width:   4.5em;
 
-@import "variables";
+@brand-primary:      #16a085; //#00a993; //
+@brand-secondary:    #303540;
+@brand-emphasis:     #0275d8;
+@brand-highlight:    #f2f3f5;
+@text-muted:         #8492aa;
 
 // colors
 @orange: #d17165;
 @green:  #8dae28;
-@blue:   @brand-emphasis; // default brand-emphasis
+@blue:   @brand-emphasis;
 @sky:    #0072C6; // darker then @brand-emphasis
 
 // asbestos
@@ -100,7 +104,6 @@ body.rtl .nav-icon-left {
 
 // sidebar
 .bars .sidebar {
-  /* box-shadow: 0 3px 6px 3px darken(@theme-body-bg, 4%); */
   border-right: 2px solid lighten(@theme-border-color, 6%);
 }
 .sidebar-content {

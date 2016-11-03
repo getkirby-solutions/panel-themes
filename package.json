@@ -1,7 +1,7 @@
 {
-  "name": "kirby-panel-theme-azure",
+  "name": "kirby-panel-themes",
   "version": "0.0.0",
-  "description": "Kirby panel theme",
+  "description": "Kirby panel themes",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/getkirby-solutions/panel-theme-azure.git"
@@ -16,6 +16,7 @@
     "gulp": "^3.9.0",
     "gulp-less": "^3.0.5",
     "gulp-minify-css": "^1.2",
+    "gulp-rename": "^1.2.2",
     "less-plugin-autoprefix": "^1.5.1"
   }
 }
