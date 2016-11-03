@@ -1,6 +1,7 @@
-# panel-theme-azure
+# Kirby panel themes
 
-Panel theme CSS
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+[![Donate](https://img.shields.io/badge/Support-❤︎_Development-9b59b6.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MAURFPVLDCF64)
 
 ## Usage
 
