@@ -6,7 +6,7 @@ Panel theme CSS
 
 ```php
 // site/config/config.php
-c::set('panel.stylesheet', 'https://unpkg.com/kirby-panel-themes/dist/{{color}}.css');
+c::set('panel.stylesheet', 'https://unpkg.com/kirby-panel-themes/dist/{{color}}.min.css');
 ```
 
 ## Azure
