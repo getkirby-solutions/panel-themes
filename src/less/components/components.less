@@ -331,8 +331,9 @@ body.ltr .topbar .breadcrumb {
   border-bottom: 1px solid fade(#000, 15%);
 }
 
+// -------------------------------------------------------
 
-// plugin: visual markdown
+// plugin: visual markdown: https://github.com/storypioneers/kirby-wysiwyg
 // caret down
 .medium-toolbar-arrow-under:after {
   border-top-color: @theme-menu-bg;
@@ -340,23 +341,6 @@ body.ltr .topbar .breadcrumb {
 .markdownfield-wrapper.markdownfield-wrapper-focused {
   border-color: @theme-emphasis; // textarea
 }
-.cm-s-visualmarkdown {
-  // blinking cursor
-  div.CodeMirror-cursor {
-    width-left-width: 1px;
-    border-left-color: @theme-emphasis; // cursor
-  }
-  // make all headings equal height
-  .cm-header-1,
-  .has-header-1,
-  .cm-header-2,
-  .has-header-2 {
-    font-size: inherit;
-  }
-}
-
-
-// plugin: wysiwyg
 // button
 .medium-editor-toolbar,
 .medium-editor-toolbar-form .medium-editor-toolbar-input,
@@ -372,10 +356,10 @@ body.ltr .topbar .breadcrumb {
 .medium-editor-toolbar li .medium-editor-button-active,
 .medium-editor-toolbar li button:hover {
   background-color: @theme-emphasis;
+  color: #fff;
 }
-
 .wysiwyg-editor {
-  padding: 1.6rem 2rem;
+  padding: 1rem;
   // textarea links
   a {
     text-decoration: none;
@@ -443,8 +427,9 @@ body.ltr .topbar .breadcrumb {
   }
 }
 
+// -------------------------------------------------------
 
-// plugin: markdown field
+// plugin: visual markdonw: https://github.com/JonasDoebertin/kirby-visual-markdown
 .cm-s-visualmarkdown {
   .cm-formatting:not(.cm-formatting-em):not(.cm-formatting-strong), // markdown prefixes
   .cm-formatting-link-string + .cm-string, // link url
@@ -479,12 +464,18 @@ body.ltr .topbar .breadcrumb {
   .cm-string {
     color: @theme-text-muted;
   }
-}
-
-// font-awesome icon pseudo-translation
-.fa-header:before {
-  content: "A";
-  font-weight: 700;
+  // blinking cursor
+  div.CodeMirror-cursor {
+    width-left-width: 1px;
+    border-left-color: @theme-emphasis; // cursor
+  }
+  // make all headings equal height
+  .cm-header-1,
+  .has-header-1,
+  .cm-header-2,
+  .has-header-2 {
+    font-size: inherit;
+  }
 }
 
 // plugin: selector: https://github.com/storypioneers/kirby-selector
