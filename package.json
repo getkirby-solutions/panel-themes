@@ -1,17 +1,17 @@
 {
   "name": "kirby-panel-themes",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "description": "Kirby panel themes",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/getkirby-solutions/panel-theme-azure.git"
+    "url": "git+https://github.com/getkirby-solutions/panel-theme.git"
   },
   "author": "hello@heyallan.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/getkirby-solutions/panel-theme-azure/issues"
+    "url": "https://github.com/getkirby-solutions/panel-theme/issues"
   },
-  "homepage": "https://github.com/getkirby-solutions/panel-theme-azure",
+  "homepage": "https://github.com/getkirby-solutions/panel-theme",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-less": "^3.0.5",
